@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat IA - Assistente Inteligente com Groq</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --text: #1f2937;
+      --accent: #e0e7ff;
+      --card-bg: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      max-width: 960px;
+      margin: 2rem auto;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    }
+    .card h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cta a {
+      background-color: var(--secondary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .cta a:hover {
+      background-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IA com Groq</h1>
+    <p>Seu assistente inteligente treinado com LLM para perguntas e análise de dados!</p>
+  </header>
+  <section>
+    <div class="card">
+      <h2>O que é?</h2>
+      <p>Um chat inteligente desenvolvido com a API Groq e LLaMA3, capaz de responder perguntas, manter o histórico de conversas e interpretar comandos complexos com IA.</p>
+    </div>
+    <div class="card">
+      <h2>Funcionalidades</h2>
+      <ul>
+        <li>Chat com histórico de conversa</li>
+        <li>Interface intuitiva com envio automático ao pressionar Enter</li>
+        <li>Suporte para múltiplas linhas com Shift + Enter</li>
+        <li>Backend com Flask + Groq API</li>
+        <li>Preparado para leitura de CSV e geração de PDF por IA</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Aplicações</h2>
+      <p>Ideal para automatizar respostas, interpretar planilhas, gerar relatórios e integrar com pipelines de dados.</p>
+    </div>
+    <div class="cta">
+      <a href="chat.html">Acessar o Chat IA</a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 - Assistente IA com Groq. Desenvolvido por Murillo Fioque.</p>
+  </footer>
+</body>
+</html>
