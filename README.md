@@ -4,7 +4,7 @@ Um chatbot desenvolvido com API Groq e modelo LLaMA3, capaz de responder inúmer
 
 # Funcionalidades
 
-- Chat interativo com histórico de conversa
+- Chat interativo com histórico de conversa.
 - Interface web responsiva e amigável (`frontend/chat.html`)
 - Backend em Flask integrando com API Groq (`backend/app.py`)
 - Suporte para leitura de CSV e geração de PDFs por IA (a implementar)
@@ -15,7 +15,7 @@ Um chatbot desenvolvido com API Groq e modelo LLaMA3, capaz de responder inúmer
 - Frontend: HTML, CSS, JavaScript  
 - Backend: Python, Flask, Flask-CORS  
 - API: Groq LLM (modelo LLaMA3)  
-- Variáveis de ambiente com dotenv
+- Variáveis de ambiente com dotenv.
 
 # Pré-Requisitos
 
