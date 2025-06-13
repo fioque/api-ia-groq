@@ -88,7 +88,7 @@
       if (!pergunta) return;
       adicionarMensagem('user', pergunta);
       perguntaInput.value = "";
-      const resposta = await fetch("https://assistente-groq.onrender.com", {
+      const resposta = await fetch("http://127.0.0.1:5000/perguntar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pergunta })
