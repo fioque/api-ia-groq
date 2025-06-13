@@ -79,7 +79,7 @@
     function adicionarMensagem(tipo, texto) {
       const div = document.createElement("div");
       div.className = `message ${tipo}`;
-      div.textContent = `${tipo === 'user' ? 'Você' : 'IA'}: ${texto}`;
+      div.textContent = `${tipo === 'user' ? 'Você' : 'Chat'}: ${texto}`;
       chatBox.appendChild(div);
       chatBox.scrollTop = chatBox.scrollHeight;
     }
@@ -88,7 +88,7 @@
       if (!pergunta) return;
       adicionarMensagem('user', pergunta);
       perguntaInput.value = "";
-      const resposta = await fetch("http://127.0.0.1:5000/perguntar", {
+      const resposta = await fetch("http://127.0.0.1:5001/perguntar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pergunta })
